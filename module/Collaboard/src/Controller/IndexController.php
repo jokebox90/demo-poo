@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Application\Controller;
+namespace Collaboard\Controller;
 
 use Laminas\Mvc\Controller\AbstractActionController;
 use Laminas\View\Model\ViewModel;

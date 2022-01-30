@@ -7,8 +7,12 @@ use Laminas\Mvc\Application;
  */
 
 ?>
-<h1>A 404 error occurred</h1>
-<h2><?= $this->message ?></h2>
+
+<div class="card p-5 w-75">
+    <h1><?= $this->translate("A 404 error occurred") ?></h1>
+    <h2><?= $this->translate($this->message) ?></h2>
+</div>
+<img src="<?= $this->basePath('img/carmen-sandiego.png') ?>" alt="Where is Carmen Sandiego ?" />
 
 <?php if (! empty($this->reason)) :
     switch ($this->reason) {

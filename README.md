@@ -50,7 +50,7 @@ configuration in `config/autoload/development.local.php.dist`. Enabling
 development mode will copy these files to versions removing the `.dist` suffix,
 while disabling development mode will remove those copies.
 
-Development mode is automatically enabled as part of the skeleton installation process. 
+Development mode is automatically enabled as part of the skeleton installation process.
 After making changes to one of the above-mentioned `.dist` configuration files you will
 either need to disable then enable development mode for the changes to take effect,
 or manually make matching updates to the `.dist`-less copies of those files.
@@ -81,7 +81,7 @@ control. (If you want to make the modifications permanent, edit the
 ## Running Psalm Static Analysis
 
 To run the supplied skeleton static analysis, you need to do one of the following:
-It is recommended to install the test components from laminas (laminas/laminas-test), 
+It is recommended to install the test components from laminas (laminas/laminas-test),
 as this is used in the tests supplied.
 
   ```bash
@@ -133,7 +133,7 @@ For vagrant documentation, please refer to [vagrantup.com](https://www.vagrantup
 
 This skeleton provides a `docker-compose.yml` for use with
 [docker-compose](https://docs.docker.com/compose/); it
-uses the provided `Dockerfile` to build a docker image 
+uses the provided `Dockerfile` to build a docker image
 for the `laminas` container created with `docker-compose`.
 
 Build and start the image and container using:
@@ -144,17 +144,17 @@ $ docker-compose up -d --build
 
 At this point, you can visit http://localhost:8080 to see the site running.
 
-You can also run commands such as `composer` in the container.  The container 
-environment is named "laminas" so you will pass that value to 
+You can also run commands such as `composer` in the container.  The container
+environment is named "laminas" so you will pass that value to
 `docker-compose run`:
 
 ```bash
 $ docker-compose run laminas composer install
 ```
 
-Some composer packages optionally use additional PHP extensions.  
-The Dockerfile contains several commented-out commands 
-which enable some of the more popular php extensions. 
+Some composer packages optionally use additional PHP extensions.
+The Dockerfile contains several commented-out commands
+which enable some of the more popular php extensions.
 For example, to install `pdo-pgsql` support for `laminas/laminas-db`
 uncomment the lines:
 
@@ -240,7 +240,7 @@ configuration for each of:
 - [phpunit](https://phpunit.de)
 
 Additionally, it comes with some basic tests for the shipped
-`Application\Controller\IndexController`.
+`CollaboardController\IndexController`.
 
 If you want to add these QA tools, execute the following:
 

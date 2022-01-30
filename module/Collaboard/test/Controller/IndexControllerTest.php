@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ApplicationTest\Controller;
+namespace CollaboardTest\Controller;
 
-use Application\Controller\IndexController;
+use CollaboardController\IndexController;
 use Laminas\Stdlib\ArrayUtils;
 use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 

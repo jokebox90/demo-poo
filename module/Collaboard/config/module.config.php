@@ -36,11 +36,22 @@ return [
                     ],
                 ],
             ],
+            'inscription' => [
+                'type'    => Literal::class,
+                'options' => [
+                    'route'    => '/inscription',
+                    'defaults' => [
+                        'controller' => Controller\InscriptionController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers' => [
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class,
+            Controller\InscriptionController::class => InvokableFactory::class,
         ],
     ],
     'view_manager' => [
